@@ -1,0 +1,28 @@
+header{
+    background-color: white;
+    text-align: center;
+}
+#nav{
+    width: 50px;
+    height: 60px;
+    font-size: 40px;
+    float: left;
+    position: absolute;
+    left: 20px;
+    
+}
+#logo{
+    width: 200px;
+    height: 100px;
+}
+
+body{
+    background-color:#f2e6ff;
+}
+img{
+    height:250px;
+    text-align:center;
+}
+h2{
+    font-size:20px;
+}
