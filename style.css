@@ -1,5 +1,7 @@
-header{
+.container-fluid{
+    width:100%;
     background-color: white;
+    position: fixed;
     text-align: center;
 }
 #nav{
@@ -11,18 +13,22 @@ header{
     left: 20px;
     
 }
+
 #logo{
     width: 200px;
-    height: 100px;
+    height: 80px;
 }
 
 body{
-    background-color:#f2e6ff;
+    background-color: #f2e6ff;
 }
-img{
-    height:250px;
-    text-align:center;
+.jumbotron{
+    height: 560px;
+    background-size: 100% 100%;
 }
 h2{
-    font-size:20px;
+    font-size: 20px;
+}
+img{
+    height:200px;
 }
