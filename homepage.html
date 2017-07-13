@@ -6,43 +6,327 @@
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    
     </head>
     <body>
-        <nav class="navbar navbar-default">
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Eliza's Dog Shop</a>
+                    <a class="navbar-brand" href="#home">Eliza's Dog Adoption</a>
                 </div>
-                <ul class="nav nav-pills">
-                    <li class="active"><a href="#home"> Home </a></li>
-                    <li><a href="#dog">Dog</a></li>
-                    <li><a href="#supplies"> supplies </a></li>
-                    <li><a href="#Cart"> Cart </a></li>
-                </ul>
+                <div class="col-md-6">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#home"> Home </a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#dog">Dog</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="#supplies"> Supplies </a>
+                            <div class="dropdown-content">
+                                <a href="#">Food</a>
+                                <a href="#">Toy</a>
+                                <a href="#">Clothes</a>
+                                <a href="#">Accessories</a>
+                            </div>
+                        </li>
+                        <li><a href="#Cart"> Cart </a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="jumbotron" id="home" style="background-image:url(https://static.tumblr.com/9d2f47e4a1cadcfda7701320b99e758a/fgjmpes/eW4o2cec0/tumblr_static_cjxfg9nq6h444kooskcccookw.jpg)">
-        </div>
-        <h2>Come to store and pick one home!</h2>
-        <br><br>
-        <div id>
-        <img class="dog" src="https://s-media-cache-ak0.pinimg.com/736x/02/13/be/0213be6aaff3abd22c4d4161cd90a379--spaniel-puppies-for-sale-puppies-puppies.jpg">
-        <p>Yorkie</p>
-        <p>Price: $200</p>
-        <img class="dog" src="https://s-media-cache-ak0.pinimg.com/736x/80/d3/64/80d364e09d31fcba8af274926d4332ff--teddy-bears-teddy-bear-dogs.jpg">
-        <p>Teddy Bear</p>
-        <p>Price: $180</p>
-        <img id="dog" src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Golden-Retriever-Pictures.jpg">
-        <p>Golden Retriever</p>
-        <p>Price: $160</p>
-        <img class="dog" src="https://s-media-cache-ak0.pinimg.com/736x/66/12/7a/66127a9bdf5c5f62402331976c0d9f7e--pet-breeds-cute-dog-breeds.jpg">
-        <p>Mini Corgi Planter Pots</p>
-        <p>Price: $150</p>
-        <img class="dog" src="https://s-media-cache-ak0.pinimg.com/originals/a1/a7/d5/a1a7d53b023eaf87cb6b0adeb835fc45.jpg">
-        <p>Fluffy Pomeranian</p>
-        <p>Price: $200</p>
+        
+        
+        <div id="home">
+            <div class="col-xs-1"></div>
+            <div class="jumbotron">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/originals/6d/02/7c/6d027cdcf3b855ec61f5fd2a6dd04edf.jpg">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/originals/05/a3/eb/05a3ebdc28894b7e74633c2a93350d6f.jpg">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="https://iso.500px.com/wp-content/uploads/2015/09/adventures_16.jpeg">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/originals/fd/89/09/fd8909982d4e24a88ba398a2b9a23d05.jpg">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="https://drscdn.500px.org/photo/51260092/m%3D900/5319e8d6363ece5a104cf61d0125e795">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <h2>Come to store and pick one home!</h2>
+            </div>
+            <div class="section" id="gallery">
+                <h1>Image Gallery</h1>
+                <img id="gallery-main" src="http://images8.wookmark.com/129580_animals-dogs-puppies-1280x1024-wallpaper_www.wallpapermi.com_5.jpg">
+                <img class="gallery-thumb" id="pic1" src="http://images8.wookmark.com/129580_animals-dogs-puppies-1280x1024-wallpaper_www.wallpapermi.com_5.jpg">
+                <img class="gallery-thumb" id="pic2" src="https://sites.google.com/site/westsidebeagles/_/rsrc/1367458451260/dogsandpuppiesforsale/DeeDee%27s_Beagle_Puppies_at_4_weeks_002.JPG?height=320&width=400">
+                <img class="gallery-thumb" id="pic3" src="http://2.bp.blogspot.com/-RSo7DR8Yipk/ToJ8dzbStTI/AAAAAAAACbk/qM0NN5oXlUQ/s400/golden-retriever-puppies%25281%2529.jpg">
+            </div>
+            <div class="col-xs-1"></div>
         </div>
         
+        
+        <div style="display:none" id="dog">
+            <br><br>
+            <h2>Look at these cute dogs. Come and pick one home!</h2>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/02/13/be/0213be6aaff3abd22c4d4161cd90a379--spaniel-puppies-for-sale-puppies-puppies.jpg">
+            <p>Yorkie</p>
+            <img src="http://www.allbigdogbreeds.com/wp-content/gallery/german-shepherd-puppies/German-Shepherd-puppy-3.jpg">
+            <p>German Shepherd</p>
+            <img src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Golden-Retriever-Pictures.jpg">
+            <p>Golden Retriever</p>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/66/12/7a/66127a9bdf5c5f62402331976c0d9f7e--pet-breeds-cute-dog-breeds.jpg">
+            <p>Mini Corgi Planter Pots</p>
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/a1/a7/d5/a1a7d53b023eaf87cb6b0adeb835fc45.jpg">
+            <p>Fluffy Pomeranian</p>
+            <img src="http://graphicsheat.com/wp-content/uploads/2013/07/cute-boo-puppy-wallpaper.jpg">
+            <p>Pomeranian</p>
+            <img src="http://puppytoob.com/wp-content/uploads/2015/08/118.jpg">
+            <p>Husky</p>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/ec/94/17/ec9417a73863880663f7b4e7240f9cee--king-charles-puppy-cavalier-king-charles.jpg">
+            <p>Blenheim Cavalier King Charles Spaniel</p>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/e0/db/d6/e0dbd6a97eeb8d0fddc554779dd98fb7--cute-lab-puppies-yellow-lab-puppies.jpg">
+            <p>Labrador</p>
+            <img src="http://dogbreedswallpapers.com/wallpaper/2015/08/border-collie-puppies-72-free-wallpaper.jpg">
+            <p>Border Collie</p>
+            <img src="http://media2.onsugar.com/files/2011/05/22/2/827/8270311/699c171513037b2b_Brown_poodle_in_the_coffee_time_3_.jpg">
+            <p>Poodle</p>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/d5/47/8d/d5478da0afcb74450e878cf833ad106c--cutest-puppy-cutest-dogs.jpg">
+            <p>Samoyed</p>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/98/85/9e/98859e1a6404b50bd15d92356e97599d--shiba-puppy-shiba-inu-puppies.jpg">
+            <p>Shiba Inu</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bichon_Frise.jpg/220px-Bichon_Frise.jpg">
+            <p>Bichon Frise</p>
+            <img src="https://i.ytimg.com/vi/wRx3Uvcktm8/maxresdefault.jpg">
+            <p>Pu</p>
+            <img src="">
+            <p></p>
+        </div>
+        
+    
+        <div class="container" id="supplies">
+            <br><br><br><br>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3>Food</h3>
+                    </div>
+                    <div class="col-md-3">
+                <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic" data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>Sample Product</h5>
+                                                <h5 class="price-text-color">$199.99</h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                            </p>
+                                        
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>Product Example</h5>
+                                                <h5 class="price-text-color">$249.99</h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6"></div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                            </p>
+                                        
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>Next Sample Product</h5>
+                                                <h5 class="price-text-color">$149.99</h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                            </p>
+                                       </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>Product with Variants</h5>
+                                                <h5 class="price-text-color">$199.99</h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="price-text-color fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                        
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Grouped Product</h5>
+                                            <h5 class="price-text-color">
+                                                $249.99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                        
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Product with Variants</h5>
+                                            <h5 class="price-text-color">
+                                                $149.99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                        
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
