@@ -1,3 +1,6 @@
+nav{
+    min-width: 790px;
+}
 .container-fluid{
     width:100%;
     background-color: white;
@@ -8,7 +11,7 @@
     font-size: 24px;
 }
 .container-fluid>.navbar-header>a:hover{
-    color: #4A235A;
+    color: #7D3C98;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
     background-color: #633974;
@@ -60,6 +63,8 @@ a{
 }
 body{
     background-color: #D7BDE2;
+    min-width: 790px;
+    padding-top: 50px;
 }
 .jumbotron{
     height: 560px;
@@ -110,7 +115,11 @@ img{
 #gallery-main{
   width: 100%;
 }
-
+.btn-primary{
+    background-color: #8E44AD;
+    border-color: #8E44AD;
+    
+}
 .col-item{
     border: 1px solid #E1E1E1;
     border-radius: 5px;

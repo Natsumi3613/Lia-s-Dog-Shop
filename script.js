@@ -9,6 +9,8 @@ $( document ).ready(function() {
         $("#home").hide();
         $("#supplies").hide();
         $("#cart").hide();
+        $("#login").hide();
+        $("#signin").hide();
         $(clicked_href).show();
     });
     $("#pic1").click(function(){
