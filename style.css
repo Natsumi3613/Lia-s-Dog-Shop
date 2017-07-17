@@ -204,6 +204,9 @@ img{
 [data-slide="prev"]{
     margin-right: 10px;
 }
+#dog{
+    white-space: nowrap;
+}
 #dog>.row {
 	/* column width */
 	-moz-column-width: 19em;
@@ -217,6 +220,4 @@ img{
 	display: inline-block;
 	width: 100%;
 }
-#dog>.rounded>img{
-    width: 200px;
-}
+
