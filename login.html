@@ -8,37 +8,53 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#home">Eliza's Dog Adoption</a>
+                    <a class="navbar-brand" href="index.html">Eliza's Dog Adoption</a>
                 </div>
                 <div>
                     <ul class="nav nav-pills">
-                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="dog.html">Dog</a></li>
                         <li class="dropdown">
                             <a class="dropbtn" href="supplies.html">Supplies</a>
                             <div class="dropdown-content">
-                                <a href="#">Food</a>
-                                <a href="#">Toy</a>
-                                <a href="#">Clothes</a>
-                                <a href="#">Accessories</a>
+                                <a href="#food">Food</a>
+                                <a href="#bed">Bed</a>
+                                <a href="#clothes">Clothes</a>
+                                <a href="#accessories">Accessories</a>
                             </div>
                         </li>
-                        <li><a href="cart.html"> Cart </a></li>
+                        <li><a href="cart.html">Cart</a></li>
                         <li><a href="signin.html">Sign in</a></li>
                         <li class="active"><a href="login.html">Log in</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
-        
+        <div class="container" id="loginin">
+            <div id="photo" style="text-align:center">
+                <img src="http://www.touxiangdaquan.net/uploads/allimg/c150625/14351ZF50X60-522209.jpg">
+            </div>
+        </div>
+        <div class="container">
+        <form action="https://formspree.io/jzheng.student@hsfi.us"
+            method="POST">
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" name="Username" class="form-control">
+                <label>Password:</label>
+                <input type="text" name="Password" class="form-control">
+                
+            </div>
+            <input type="submit" value="Log in">
+        </form>
+        </div>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>

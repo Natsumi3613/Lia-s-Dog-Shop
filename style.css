@@ -64,6 +64,8 @@ a{
 body{
     background-color: #D7BDE2;
     min-width: 800px;
+    width: auto !important;  /* Firefox will set width as auto */
+    width: 800px;  
     padding-top: 50px;
 }
 .jumbotron{
