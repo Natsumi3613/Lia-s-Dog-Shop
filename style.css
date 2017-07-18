@@ -67,6 +67,7 @@ body{
     width: auto !important;  /* Firefox will set width as auto */
     width: 800px;  
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .jumbotron{
     height: 560px;
@@ -222,4 +223,10 @@ img{
 	display: inline-block;
 	width: 100%;
 }
-
+#loginsubmit{
+    background-color: purple;
+}
+#map{
+    height: 400px;
+    width: 100%;
+}

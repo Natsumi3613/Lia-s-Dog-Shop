@@ -1,18 +1,5 @@
 // JavaScript File
 $( document ).ready(function() {
-    $('ul li').click(function(){
-        var clicked_tab = $(this);
-        clicked_tab.addClass('active');
-        clicked_tab.parent().children('li').not(clicked_tab).removeClass('active');
-        var clicked_href = $(this).children('a').attr('href');
-        $("#dog").hide();
-        $("#home").hide();
-        $("#supplies").hide();
-        $("#cart").hide();
-        $("#login").hide();
-        $("#signin").hide();
-        $(clicked_href).show();
-    });
     $("#pic1").click(function(){
         $("#gallery-main").attr("src","http://images8.wookmark.com/129580_animals-dogs-puppies-1280x1024-wallpaper_www.wallpapermi.com_5.jpg");
     });
