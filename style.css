@@ -94,6 +94,11 @@ h2{
     font-family: 'Courgette', cursive;
     color: purple;
 }
+h3{
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+    color: purple;
+}
 p{
     text-align:center;
     font-size: 25px;
@@ -130,6 +135,7 @@ img{
 }
 .btn-primary:hover{
     background-color: #633974;
+    border-color: #633974;
 }
 .col-item{
     border: 1px solid #E1E1E1;
@@ -229,4 +235,20 @@ img{
 #map{
     height: 400px;
     width: 100%;
+}
+label{
+    color: purple;
+    font-family: 'Bellefair', serif;
+    font-size: 18px;
+}
+#cart{
+    padding-top: 20px;
+}
+#cart>.col-xs-9>#list{
+    background-color: #F8F9F9;
+    margin-right: 10px;
+    opacity: 1;
+}
+#cart>.col-xs-3>#summary{
+    background-color: #F5EEF8;
 }

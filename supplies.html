@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -23,15 +23,15 @@
                         <li><a href="dog.html">Dog</a></li>
                         <li class="dropdown active">
                             <a class="dropbtn" href="supplies.html">Supplies</a>
-                            <div class="dropdown-content">
-                                <a href="#food">Food</a>
-                                <a href="#bed">Bed</a>
-                                <a href="#clothes">Clothes</a>
-                                <a href="#accessories">Accessories</a>
+                            <div class="dropdown-content" id="myScrollspy">
+                                <a href="supplies.html #food">Food</a>
+                                <a href="supplies.html #bed">Bed</a>
+                                <a href="supplies.html #clothes">Clothes</a>
+                                <a href="supplies.html #accessories">Accessories</a>
                             </div>
                         </li>
                         <li><a href="cart.html">Cart</a></li>
-                        <li><a href="signin.html">Sign in</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
                         <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Log-in</a></li>
                     </ul>
                 </div>
@@ -66,12 +66,12 @@
         <div class="container" id="food">
             <div class="row">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-xs-9">
                         <h3>Food</h3>
                     </div>
-                    <div class="col-md-3">
-                        <div class="controls pull-right hidden-xs">
-                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-foodc" data-slide="prev">
+                    <div class="col-xs-3">
+                        <div class="controls pull-right hidden-xs-down">
+                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-food" data-slide="prev">
                                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             </a>
                             <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-food" data-slide="next">
@@ -80,23 +80,23 @@
                         </div>
                     </div>
                 </div>
-                <div id="carousel-food" class="carousel slide hidden-xs" data-ride="carousel">
+                <div id="carousel-food" class="carousel slide hidden-xs-down" data-ride="carousel">
             <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://www.unloathe.com/product_photos/3339661925347.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Sample Product</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>KIRKLAND Chicken, Rice & Vegetable Flavor</h5>
+                                                    <h5 class="price-text-color">$39.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -107,48 +107,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://www.unloathe.com/product_photos/3332310010731.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product Example</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>PEDIGREE Chicken, Rice & Vegetable Flavor</h5>
+                                                    <h5 class="price-text-color">$34.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://www.unloathe.com/product_photos/3339661925350.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Next Sample Product</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>KIRKLAND Lamb,Rice & Vegetable Flavor</h5>
+                                                    <h5 class="price-text-color">$39.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -159,7 +159,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                            </div>
                                             <div class="clearfix"></div>
@@ -170,18 +170,18 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://www.unloathe.com/product_photos/1198527548.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>3 lbs of Chicken Fillet</h5>
+                                                    <h5 class="price-text-color">$24.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -192,48 +192,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://www.unloathe.com/product_photos/3332310001040.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Grouped Product</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>PEDIGREE Chunky Ground Dinner</h5>
+                                                    <h5 class="price-text-color">$30.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://www.unloathe.com/product_photos/7910050589.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Large Milk Bone Dog Treat</h5>
+                                                    <h5 class="price-text-color">$49.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -244,7 +244,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -261,12 +261,12 @@
         <div class="container" id="bed">
             <div class="row">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-xs-9">
                         <h3>Bed</h3>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                 <!-- Controls -->
-                        <div class="controls pull-right hidden-xs">
+                        <div class="controls pull-right hidden-xs-down">
                             <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-bed" data-slide="prev">
                                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             </a>
@@ -276,23 +276,23 @@
                         </div>
                     </div>
                 </div>
-                <div id="carousel-bed" class="carousel slide hidden-xs" data-ride="carousel">
+                <div id="carousel-bed" class="carousel slide hidden-xs-down" data-ride="carousel">
             <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://www.afpet.com/images/l/Wholesale-Shark-kennel-Dog-House-Puppy-Bed-Pet-Bed-Cat-Nest-Teddy-House.jpg" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB1IrIFHFXXXXamapXXq6xXFXXXz/Soft-samll-fleece-warm-font-b-pet-b-font-font-b-bed-b-font-dog-cat.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Sample Product</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Lovely fleece warm dog bed</h5>
+                                                    <h5 class="price-text-color">$29.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -303,48 +303,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="https://image.pushauction.com/350/350/ba98ce43-bb06-4fbd-9b0a-3371c07f9780/53e088b2-2284-4248-bda1-a2243319e488.jpg" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB1okaJRpXXXXXGXpXXq6xXFXXX9/Hot-Sale-New-font-b-Shark-b-font-Shape-Dog-font-b-Beds-b-font-Warm.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product Example</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Shark Pet Bed</h5>
+                                                    <h5 class="price-text-color">$42.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="https://s-media-cache-ak0.pinimg.com/736x/3a/af/0c/3aaf0ca8bcc16d4986790474611d495b.jpg" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB154k_QFXXXXXjaXXXq6xXFXXXV/-font-b-Pet-b-font-font-b-Dog-b-font-Puppy-Cat-Removable-Warm-font.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Next Sample Product</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Brown warm dog bed</h5>
+                                                    <h5 class="price-text-color">$28.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -355,7 +355,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                            </div>
                                             <div class="clearfix"></div>
@@ -366,18 +366,18 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://www.eco-terric.com/example/latest10.jpg" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB12nKdOXXXXXbVapXXq6xXFXXXr/Sweet-Pink-Princess-Lace-Cat-Dog-Bed-Soft-\-Warm-Puppy-font-b-Kitten-b-font.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Pink Princess Lace Dog Bed</h5>
+                                                    <h5 class="price-text-color">$49.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -388,48 +388,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://cdn.shopify.com/s/files/1/0663/2483/articles/dog_bed_1024x1024.jpg?v=1487978032" class="img-responsive" alt="a" />
+                                            <img src="https://s-media-cache-ak0.pinimg.com/originals/2d/cb/ee/2dcbee48dd9f42eb542dae0ccdfda401.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Grouped Product</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Pink lamb dog bed</h5>
+                                                    <h5 class="price-text-color">$39.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://www.living60010.com/EI/sharedobjects/handlers/ir.ashx?p=ZgAvAG0AZwBWAFEAdwB0ADMASgBQAC8AWgBTAFIAMwBJAHUAKwBYAFYANQB5AEoAbwBXADgAKwB2AGIAdgAvAHkAZwBWAFcAMgArADYAUAAvADcAdQBRAG8AQgBJAEcAYQBmADUALwBPAGMAaABPADIAdgB3AHkAdAA1AHoASABuAFAAWgBRAFoAegBUAEQARQBRAEwANwBLAGwAMgBiAGoAQwBNAFQAMQByAHMAagB3AGoAYwBqADMAMgBLAE4AWAB6AEgAcABSAEIAawB2AHEANAB2AFQAOABOAE0AYgBWADAAdABZAEgAYwBUAFYAYgA5ADQAQgBxADQALwBLAG8AWgB4AFYAMQBoAHEAVQAyAGgAegBZAFIAUQBQAHUARgB4AC8AWQBQAE4AagBPAGQANAAwAEwAQQA1AE0AagBQACsAZABSAHEATABNAFcAWgBCAEIAZgA5AHEARQBmAG8AdQBlAHUAQwBoAE4AMQBVAEMARQBsAHoAZABLAG0ARQBvAHUAawAyAGsARQBrAEsAbwBhAFMAZABBADMAdABBAHQAYgBvAE0ARAAvAEkAMgB1AHUAVAAvAFoAdABJAG0AbwBhAGIAVgBLAHUAdQBmAGQAagB5AFYARAB6AFoARgBQADMAbgBoAHYAZwBxAEoAcQBmAGwAcQBUADIARgA=&w=670&mw=670" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB13yOVQpXXXXceXFXXq6xXFXXXA/-font-b-Cute-b-font-Strawberry-font-b-Dog-b-font-font-b-Bed-b.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Cute Strawberry Dog Bed</h5>
+                                                    <h5 class="price-text-color">$53.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -440,7 +440,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -457,12 +457,12 @@
         <div class="container" id="clothes">
             <div class="row">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-xs-9">
                         <h3>Clothes</h3>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                 <!-- Controls -->
-                        <div class="controls pull-right hidden-xs">
+                        <div class="controls pull-right hidden-xs-down">
                             <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-clothes" data-slide="prev">
                                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             </a>
@@ -472,23 +472,23 @@
                         </div>
                     </div>
                 </div>
-                <div id="carousel-clothes" class="carousel slide hidden-xs" data-ride="carousel">
+                <div id="carousel-clothes" class="carousel slide hidden-xs-down" data-ride="carousel">
             <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://s-media-cache-ak0.pinimg.com/736x/9e/c8/72/9ec872fa2145902c1ab2716642e41642.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Sample Product</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Alligator Costume</h5>
+                                                    <h5 class="price-text-color">$29.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -499,48 +499,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="http://1cr9883up6mem97ddj01yxgu.wpengine.netdna-cdn.com/wp-content/uploads/images/web-dog1.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product Example</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Pink Tutu Dress</h5>
+                                                    <h5 class="price-text-color">$35.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="https://puppydogweb.com/gallery/doxipoos/doxipoo_consey2.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Next Sample Product</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Christmas Dress</h5>
+                                                    <h5 class="price-text-color">$49.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -551,7 +551,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                            </div>
                                             <div class="clearfix"></div>
@@ -562,18 +562,18 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="http://www.barmasdoggery.com/amber.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Yellow Raincoat</h5>
+                                                    <h5 class="price-text-color">$35.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -584,48 +584,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
                                             <img src="http://rizale.co/wp-content/uploads/2017/06/wedding-guest-gifts-ideas-top-7-for-dogs-wrapping-350x260.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Grouped Product</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Lavender Polka Dot Dress</h5>
+                                                    <h5 class="price-text-color">$43.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="https://www.vogue4dog.ru/image/cache/data/odezhda-dlya-yorkov-350x260.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Winter Outfit</h5>
+                                                    <h5 class="price-text-color">$39.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -636,7 +636,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -653,12 +653,12 @@
         <div class="container" id="accessories">
             <div class="row">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-xs-9">
                         <h3>Accessories</h3>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                 <!-- Controls -->
-                        <div class="controls pull-right hidden-xs">
+                        <div class="controls pull-right hidden-xs-down">
                             <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-accessories" data-slide="prev">
                                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             </a>
@@ -668,23 +668,23 @@
                         </div>
                     </div>
                 </div>
-                <div id="carousel-accessories" class="carousel slide hidden-xs" data-ride="carousel">
+                <div id="carousel-accessories" class="carousel slide hidden-xs-down" data-ride="carousel">
             <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="https://sc01.alicdn.com/kf/HTB15aWNRpXXXXa5apXXq6xXFXXXh/Lovoyager-pet-accessories-small-puppy-dog-harness.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Sample Product</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Lovoyager Pet Accessories</h5>
+                                                    <h5 class="price-text-color">$4.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -695,48 +695,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB1SzDULpXXXXbBXpXXq6xXFXXX0/Fashion-Luxury-font-b-Female-b-font-Pet-font-b-Dog-b-font-Collar-Bling-Rhinestone.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product Example</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Rhinestone Pearl Collar</h5>
+                                                    <h5 class="price-text-color">$9.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="http://g02.a.alicdn.com/kf/HTB15BByJVXXXXc9XFXXq6xXFXXXM/PU-Leather-Dog-Collar-Rhinestone-Collar-Perro-font-b-Pet-b-font-font-b-Accessories-b.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Next Sample Product</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>PU Leather Dog Collar</h5>
+                                                    <h5 class="price-text-color">$8.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -747,7 +747,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                            </div>
                                             <div class="clearfix"></div>
@@ -758,18 +758,18 @@
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB1BqyGKpXXXXcwXVXXq6xXFXXXA/Armi-font-b-store-b-font-Pink-Fashion-Style-Retractable-Automatic-Pet-font-b-Dogs-b.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$199.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Automatic Dog Collar Leashes </h5>
+                                                    <h5 class="price-text-color">$19.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-xs-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -780,48 +780,48 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="https://s-media-cache-ak0.pinimg.com/originals/42/b4/8f/42b48f8ba9f017fc683af1d1e426ed58.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Grouped Product</h5>
-                                                    <h5 class="price-text-color">$249.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5>Stripes Large Dog Neckties</h5>
+                                                    <h5 class="price-text-color">$10.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6"></div>
+                                                <div class="rating hidden-xs-down col-xs-6"></div>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-xs-4">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            <img src="https://ae01.alicdn.com/kf/HTB1Bd7PNpXXXXXwXpXXq6xXFXXXC/Rhinestone-ID-Card-of-font-b-Pet-b-font-font-b-Dog-b-font-Necklace-Pendant.jpg" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
                                             <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5>Product with Variants</h5>
-                                                    <h5 class="price-text-color">$149.99</h5>
+                                                <div class="price col-xs-6">
+                                                    <h5> Dog Necklace Pendant</h5>
+                                                    <h5 class="price-text-color">$15.99</h5>
                                                 </div>
-                                                <div class="rating hidden-sm col-md-6">
+                                                <div class="rating hidden-sx-down col-xs-6">
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
                                                     <i class="price-text-color fa fa-star"></i>
@@ -832,7 +832,7 @@
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i>
-                                                    <a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a>
+                                                    <a href="http://www.jquery2dotnet.com" class="hidden-xs-down">Add to cart</a>
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
