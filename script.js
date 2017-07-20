@@ -9,4 +9,24 @@ $( document ).ready(function() {
     $("#pic3").click(function(){
         $("#gallery-main").attr("src","http://2.bp.blogspot.com/-RSo7DR8Yipk/ToJ8dzbStTI/AAAAAAAACbk/qM0NN5oXlUQ/s400/golden-retriever-puppies%25281%2529.jpg");
     });
+    $("#cartbtn").click(function(){
+        $("#supplies").hide();
+        $("#cart").show();
+    });
+    $("#suppliesbtn").click(function(){
+        $("#cart").hide();
+    });
+    
+    $("body").click(function(){
+        console.log(event.target);
+    });
+    $("#b1").click(function(){
+        $("#1").clone().appendTo($("#list"));
+    });
+    $("#").click(function(){
+        $("#").clone().appendTo($("#list"));
+    });
+    $("#").click(function(){
+        $("#").clone().appendTo($("#list"));
+    });
 });

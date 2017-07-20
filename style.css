@@ -242,13 +242,42 @@ label{
     font-size: 18px;
 }
 #cart{
-    padding-top: 20px;
+    padding-top: 50px;
 }
 #cart>.col-xs-9>#list{
-    background-color: #F8F9F9;
-    margin-right: 10px;
-    opacity: 1;
+    margin-right: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #BB8FCE;
+    border-radius: 16px;
 }
 #cart>.col-xs-3>#summary{
-    background-color: #F5EEF8;
+    min-width: 250px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #BB8FCE;
+    border-radius: 16px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid purple;
+}
+.modal-title{
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+    color: purple;
+}
+.modal-body{
+    color: purple;
+}
+.modal-footer>a{
+    font-size: 18px;
 }
