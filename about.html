@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Eliza's Dog Adoption</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="script.js"></script>
@@ -19,9 +19,9 @@
                 <div>
                     <ul class="nav nav-pills">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
                         <li><a href="dog.html">Dog</a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a class="dropbtn" id="suppliesbtn" href="supplies.html">Supplies & Cart</a>
                             <div class="dropdown-content" id="myScrollspy">
                                 <a href="supplies.html #food">Food</a>
@@ -38,7 +38,7 @@
             </div>
         </nav>
         <div class="modal fade" id="myModal">
-	        <div class="modal-dialog">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -46,19 +46,18 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-    		                <label for="exampleInputEmail1">Email address</label>
-    		                
-    		                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
-  		                </div>
-		                <div class="form-group">
-		                    <label for="exampleInputPassword1">Password</label>
-			                <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
-		                </div>
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                        </div>
                         <p class="text-right"><a href="#">Forgot password?</a></p>
                     </div>
                     <div class="modal-footer">
                         <a href="#" data-dismiss="modal" class="btn">Close</a>
-                        <a href="#" class="btn btn-primary">Log-in</a>
+                        <a href="index.html" class="btn btn-primary">Log-in</a>
                     </div>
                 </div>
             </div>
@@ -75,14 +74,15 @@
                 space for another animal who might desperately need it."
             </p>
             <strong style="float:right"><a href="http://www.humanesocietyny.org/">From the Humane Society</a></strong><br>
-            <p>Eliza's Dog Adoption was created to provide dogs and puppies a safe and warm place. 
+            <p>
+                Eliza's Dog Adoption was created to provide dogs and puppies a safe and warm place. 
                 This organization relied on fundraisers and donations to help these dogs. Please come 
                 and help us create a home for these homeless dogs.
             </p>
             <div class="container">
                 <div class="row-fluid">
                     <div class="col-xs-8">
-                        <h3>My Google Maps Demo</h3>
+                        <h3>Adoption Centers</h3>
                         <div id="map"></div>
                         <script>
                             function initMap(){
@@ -112,20 +112,19 @@
                             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuxzVWGh89GNrC7OU2lPoI1i_AeTBIZhk&callback=initMap">
                         </script>
                     </div>
-    	            <div class="col-xs-4">
-    	            	<h2>Local adoption organizations in New York:</h2>
-    		            <address>
-    			            <strong><a href =" http://www.nycsecondchancerescue.org/">Second Chance Rescue</a></strong><br>
+                    <div class="col-xs-4">
+                        <h2>Local adoption organizations in New York:</h2>
+                        <address>
+                            <strong><a href =" http://www.nycsecondchancerescue.org/">Second Chance Rescue</a></strong><br>
                             <strong><a href ="https://www.animalhavenshelter.org/">Animal Haven</a></strong><br>
                             <strong><a href ="https://rescuedogsrocknyc.org/">Rescue Dogs Rock NYC(online only)</a></strong><br>
                             <strong><a href="http://www.humanesocietyny.org/">The Humane Society</a></strong>
-    		            </address>
-    	            </div>
+                        </address>
+                    </div>
                 </div>
             </div>
         </div>
-
-
+        
         
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>

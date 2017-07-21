@@ -25,6 +25,21 @@ a{
     background-color: #D7BDE2;
     color: white;
 }
+
+
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: #D7BDE2;
+    color: white;
+}
 .dropbtn {
     background-color: white;
     color: purple;
@@ -32,10 +47,6 @@ a{
     font-size: 18px;
     border: none;
     cursor: pointer;
-}
-.dropdown{
-    position: relative;
-    display: inline-block;
 }
 .dropdown-content{
     display: none;
@@ -54,38 +65,44 @@ a{
 .dropdown-content a:hover{
     background-color: #EBDEF0
 }
-.dropdown:hover .dropdown-content{
-    display: block;
+
+
+
+
+.modal-title{
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+    color: purple;
 }
-.dropdown:hover .dropbtn{
-    background-color: #D7BDE2;
-    color: white;
+.modal-body{
+    color: purple;
 }
+.modal-footer>a{
+    font-size: 18px;
+}
+#loginsubmit{
+    background-color: purple;
+}
+
+
+
+
 body{
     background-color: #D7BDE2;
     min-width: 800px;
-    width: auto !important;  /* Firefox will set width as auto */
+    width: auto !important;
     width: 800px;  
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.jumbotron{
-    height: 560px;
-    background-size: 100% 100%;
-    background-color: #D7BDE2;
-}
-#myCarousel{
-    width: 80%;
-    margin: auto;
-    overflow:hidden;
-}
+
+
+
+
 h1{
     text-align:center;
     font-size: 45px;
     font-family: 'Courgette', cursive;
-    color: purple;
-}
-.jumbotron .h1, .jumbotron h1{
     color: purple;
 }
 h2{
@@ -105,6 +122,10 @@ p{
     font-family: 'Courgette', cursive;
     color: purple;
 }
+
+
+
+
 .item-img{
     width:100%;
 }
@@ -114,21 +135,75 @@ p{
 img{
     width:250px;
 }
-#gallery{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+
+
+
+
+.jumbotron{
+    height: 560px;
+    background-size: 100% 100%;
+    background-color: #D7BDE2;
 }
-.gallery-thumb{
-  display: block;
-  float: left;
-  padding: 5px;
-  box-sizing: border-box;
-  width: 33%;
+.jumbotron .h1, .jumbotron h1{
+    color: purple;
+}
+#myCarousel{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+#gallery{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #gallery-main{
   width: 100%;
 }
+.gallery-thumb{
+    display: block;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+
+
+
+#map{
+    height: 400px;
+    width: 100%;
+}
+label{
+    color: purple;
+    font-family: 'Bellefair', serif;
+    font-size: 18px;
+}
+
+
+
+
+#dog{
+    white-space: nowrap;
+}
+#dog>.row {
+	/* column width */
+	-moz-column-width: 19em;
+	-webkit-column-width: 19em;
+	/* space between columns */
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+}
+#dog>.items{
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+
 .btn-primary{
     background-color: #8E44AD;
     border-color: #8E44AD;
@@ -166,18 +241,6 @@ img{
 .price-text-color{
     color: #219FD1;
 }
-.col-item .info .rating{
-    color: #777;
-}
-.col-item .rating{
-    /*width: 50%;*/
-    float: left;
-    font-size: 17px;
-    text-align: right;
-    line-height: 52px;
-    margin-bottom: 10px;
-    height: 52px;
-}
 .col-item .separator{
     border-top: 1px solid #E1E1E1;
 }
@@ -200,9 +263,7 @@ img{
 .col-item .btn-add{
     border-right: 1px solid #E1E1E1;
 }
-
-.col-item .btn-details
-{
+.col-item .btn-details{
     width: 50%;
     float: left;
     padding-left: 10px;
@@ -213,49 +274,13 @@ img{
 [data-slide="prev"]{
     margin-right: 10px;
 }
-#dog{
-    white-space: nowrap;
-}
-#dog>.row {
-	/* column width */
-	-moz-column-width: 19em;
-	-webkit-column-width: 19em;
-	
-	/* space between columns */
-	-moz-column-gap: 1em;
-	-webkit-column-gap: 1em;
-}
-#dog>.items{
-	display: inline-block;
-	width: 100%;
-}
-#loginsubmit{
-    background-color: purple;
-}
-#map{
-    height: 400px;
-    width: 100%;
-}
-label{
-    color: purple;
-    font-family: 'Bellefair', serif;
-    font-size: 18px;
-}
+
+
 #cart{
     padding-top: 50px;
 }
 #cart>.col-xs-9>#list{
     margin-right: 4px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    border-style: solid;
-    border-width: thin;
-    border-color: #BB8FCE;
-    border-radius: 16px;
-}
-#cart>.col-xs-3>#summary{
-    min-width: 250px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 16px;
@@ -270,14 +295,25 @@ hr{
     border: 0;
     border-top: 2px solid purple;
 }
-.modal-title{
-    font-size: 30px;
-    font-family: 'Courgette', cursive;
-    color: purple;
+#cart>.col-xs-3>#summary{
+    min-width: 250px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #BB8FCE;
+    border-radius: 16px;
 }
-.modal-body{
-    color: purple;
+
+
+
+
+.btn-group-lg>.btn, .btn-lg{
+    background-color: #8E44AD;
+    color: white;
 }
-.modal-footer>a{
-    font-size: 18px;
+.btn-group-lg>.btn, .btn-lg:hover{
+    background-color: #7D3C98;
+    color: white;
 }

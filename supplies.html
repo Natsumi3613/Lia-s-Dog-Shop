@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Eliza's Dog Adoption</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="script.js"></script>
@@ -38,7 +38,7 @@
             </div>
         </nav>
         <div class="modal fade" id="myModal">
-	        <div class="modal-dialog">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -46,179 +46,178 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-    		                <label for="exampleInputEmail1">Email address</label>
-    		                
-    		                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
-  		                </div>
-		                <div class="form-group">
-		                    <label for="exampleInputPassword1">Password</label>
-			                <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
-		                </div>
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                        </div>
                         <p class="text-right"><a href="#">Forgot password?</a></p>
                     </div>
                     <div class="modal-footer">
                         <a href="#" data-dismiss="modal" class="btn">Close</a>
-                        <a href="#" class="btn btn-primary">Log-in</a>
+                        <a href="index.html" class="btn btn-primary">Log-in</a>
                     </div>
                 </div>
             </div>
         </div>
         <div id="supplies">
-        <div class="container" id="food">
-            <div class="row">
+            <div class="container" id="food">
                 <div class="row">
-                    <div class="col-xs-9">
-                        <h3>Food</h3>
-                    </div>
-                    <div class="col-xs-3">
-                        <div class="controls pull-right hidden-xs-down">
-                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-food" data-slide="prev">
-                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            </a>
-                            <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-food" data-slide="next">
-                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                            </a>
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <h3>Food</h3>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="controls pull-right hidden-xs-down">
+                                <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-food" data-slide="prev">
+                                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                </a>
+                                <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-food" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="carousel-food" class="carousel slide hidden-xs-down" data-ride="carousel">
-            <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.unloathe.com/product_photos/3339661925347.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="1">
-                                                <div class="price col-xs-6">
-                                                    <h5>KIRKLAND Chicken, Rice & Vegetable Flavor</h5>
-                                                    <h5 class="price-text-color">$39.99</h5>
+                    <div id="carousel-food" class="carousel slide hidden-xs-down" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.unloathe.com/product_photos/3339661925347.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="1">
+                                                    <div class="price col-xs-12">
+                                                        <h5>KIRKLAND Chicken, Rice & Vegetable Flavor</h5>
+                                                        <h5 class="price-text-color">$39.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b1" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b1" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.unloathe.com/product_photos/3332310010731.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="2">
-                                                <div class="price col-xs-6">
-                                                    <h5>PEDIGREE Chicken, Rice & Vegetable Flavor</h5>
-                                                    <h5 class="price-text-color">$34.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.unloathe.com/product_photos/3332310010731.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="2">
+                                                    <div class="price col-xs-12">
+                                                        <h5>PEDIGREE Chicken, Rice & Vegetable Flavor</h5>
+                                                        <h5 class="price-text-color">$34.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b2" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b2" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.unloathe.com/product_photos/3339661925350.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="3">
-                                                <div class="price col-xs-6">
-                                                    <h5>KIRKLAND Lamb,Rice & Vegetable Flavor</h5>
-                                                    <h5 class="price-text-color">$39.99</h5>
-                                                </div>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.unloathe.com/product_photos/3339661925350.jpg" class="img-responsive" alt="a" />
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b3" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                           </div>
-                                            <div class="clearfix"></div>
+                                            <div class="info">
+                                                <div class="row" id="3">
+                                                    <div class="price col-xs-12">
+                                                        <h5>KIRKLAND Lamb, Rice & Vegetable Flavor</h5>
+                                                        <h5 class="price-text-color">$39.99</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b3" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.unloathe.com/product_photos/1198527548.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="4">
-                                                <div class="price col-xs-6">
-                                                    <h5>3 lbs of Chicken Fillet</h5>
-                                                    <h5 class="price-text-color">$24.99</h5>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.unloathe.com/product_photos/1198527548.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="4">
+                                                    <div class="price col-xs-12">
+                                                        <h5>3 lbs of Chicken Fillet Dog Food</h5>
+                                                        <h5 class="price-text-color">$24.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b4" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b4" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.unloathe.com/product_photos/3332310001040.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="5">
-                                                <div class="price col-xs-6">
-                                                    <h5>PEDIGREE Chunky Ground Dinner</h5>
-                                                    <h5 class="price-text-color">$30.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.unloathe.com/product_photos/3332310001040.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="5">
+                                                    <div class="price col-xs-12">
+                                                        <h5>PEDIGREE Chunky Ground Dinner</h5>
+                                                        <h5 class="price-text-color">$30.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b5" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b5" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.unloathe.com/product_photos/7910050589.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="6">
-                                                <div class="price col-xs-6">
-                                                    <h5>Large Milk Bone Dog Treat</h5>
-                                                    <h5 class="price-text-color">$49.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.unloathe.com/product_photos/7910050589.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="6">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Large Milk Bone Dog Treat</h5>
+                                                        <h5 class="price-text-color">$49.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b6" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b6" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -227,164 +226,162 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="container" id="bed">
-            <div class="row">
+            <br>
+            <div class="container" id="bed">
                 <div class="row">
-                    <div class="col-xs-9">
-                        <h3>Bed</h3>
-                    </div>
-                    <div class="col-xs-3">
-                <!-- Controls -->
-                        <div class="controls pull-right hidden-xs-down">
-                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-bed" data-slide="prev">
-                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            </a>
-                            <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-bed" data-slide="next">
-                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                            </a>
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <h3>Bed</h3>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="controls pull-right hidden-xs-down">
+                                <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-bed" data-slide="prev">
+                                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                </a>
+                                <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-bed" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="carousel-bed" class="carousel slide hidden-xs-down" data-ride="carousel">
-            <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB1IrIFHFXXXXamapXXq6xXFXXXz/Soft-samll-fleece-warm-font-b-pet-b-font-font-b-bed-b-font-dog-cat.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="7">
-                                                <div class="price col-xs-6">
-                                                    <h5>Lovely fleece warm dog bed</h5>
-                                                    <h5 class="price-text-color">$29.99</h5>
+                    <div id="carousel-bed" class="carousel slide hidden-xs-down" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB1IrIFHFXXXXamapXXq6xXFXXXz/Soft-samll-fleece-warm-font-b-pet-b-font-font-b-bed-b-font-dog-cat.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="7">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Lovely fleece warm bed</h5>
+                                                        <h5 class="price-text-color">$29.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b7" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b7" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB1okaJRpXXXXXGXpXXq6xXFXXX9/Hot-Sale-New-font-b-Shark-b-font-Shape-Dog-font-b-Beds-b-font-Warm.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="8">
-                                                <div class="price col-xs-6">
-                                                    <h5>Shark Pet Bed</h5>
-                                                    <h5 class="price-text-color">$42.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB1okaJRpXXXXXGXpXXq6xXFXXX9/Hot-Sale-New-font-b-Shark-b-font-Shape-Dog-font-b-Beds-b-font-Warm.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="8">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Shark Pet Bed</h5>
+                                                        <h5 class="price-text-color">$42.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b8" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b8" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB154k_QFXXXXXjaXXXq6xXFXXXV/-font-b-Pet-b-font-font-b-Dog-b-font-Puppy-Cat-Removable-Warm-font.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="9">
-                                                <div class="price col-xs-6">
-                                                    <h5>Brown warm dog bed</h5>
-                                                    <h5 class="price-text-color">$28.99</h5>
-                                                </div>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB154k_QFXXXXXjaXXXq6xXFXXXV/-font-b-Pet-b-font-font-b-Dog-b-font-Puppy-Cat-Removable-Warm-font.jpg" class="img-responsive" alt="a" />
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b9"data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
-                                                </p>
-                                           </div>
-                                            <div class="clearfix"></div>
+                                            <div class="info">
+                                                <div class="row" id="9">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Brown warm dog bed</h5>
+                                                        <h5 class="price-text-color">$28.99</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b9" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB12nKdOXXXXXbVapXXq6xXFXXXr/Sweet-Pink-Princess-Lace-Cat-Dog-Bed-Soft-\-Warm-Puppy-font-b-Kitten-b-font.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="10">
-                                                <div class="price col-xs-6">
-                                                    <h5>Pink Princess Lace Dog Bed</h5>
-                                                    <h5 class="price-text-color">$49.99</h5>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB12nKdOXXXXXbVapXXq6xXFXXXr/Sweet-Pink-Princess-Lace-Cat-Dog-Bed-Soft-\-Warm-Puppy-font-b-Kitten-b-font.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="10">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Pink Princess Lace Bed</h5>
+                                                        <h5 class="price-text-color">$49.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b10" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b10">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://s-media-cache-ak0.pinimg.com/originals/2d/cb/ee/2dcbee48dd9f42eb542dae0ccdfda401.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="11">
-                                                <div class="price col-xs-6">
-                                                    <h5>Pink lamb dog bed</h5>
-                                                    <h5 class="price-text-color">$39.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://s-media-cache-ak0.pinimg.com/originals/2d/cb/ee/2dcbee48dd9f42eb542dae0ccdfda401.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="11">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Pink lamb dog bed</h5>
+                                                        <h5 class="price-text-color">$39.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b11" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b11">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB13yOVQpXXXXceXFXXq6xXFXXXA/-font-b-Cute-b-font-Strawberry-font-b-Dog-b-font-font-b-Bed-b.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="12">
-                                                <div class="price col-xs-6">
-                                                    <h5>Cute Strawberry Dog Bed</h5>
-                                                    <h5 class="price-text-color">$53.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB13yOVQpXXXXceXFXXq6xXFXXXA/-font-b-Cute-b-font-Strawberry-font-b-Dog-b-font-font-b-Bed-b.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="12">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Cute Strawberry Bed</h5>
+                                                        <h5 class="price-text-color">$53.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b12" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b12">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -393,164 +390,162 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="container" id="clothes">
-            <div class="row">
+            <br>
+            <div class="container" id="clothes">
                 <div class="row">
-                    <div class="col-xs-9">
-                        <h3>Clothes</h3>
-                    </div>
-                    <div class="col-xs-3">
-                <!-- Controls -->
-                        <div class="controls pull-right hidden-xs-down">
-                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-clothes" data-slide="prev">
-                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            </a>
-                            <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-clothes" data-slide="next">
-                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                            </a>
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <h3>Clothes</h3>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="controls pull-right hidden-xs-down">
+                                <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-clothes" data-slide="prev">
+                                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                </a>
+                                <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-clothes" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="carousel-clothes" class="carousel slide hidden-xs-down" data-ride="carousel">
-            <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://s-media-cache-ak0.pinimg.com/736x/9e/c8/72/9ec872fa2145902c1ab2716642e41642.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="13">
-                                                <div class="price col-xs-6">
-                                                    <h5>Alligator Costume</h5>
-                                                    <h5 class="price-text-color">$29.99</h5>
+                    <div id="carousel-clothes" class="carousel slide hidden-xs-down" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://s-media-cache-ak0.pinimg.com/736x/9e/c8/72/9ec872fa2145902c1ab2716642e41642.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="13">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Alligator Costume</h5>
+                                                        <h5 class="price-text-color">$29.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b13" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b13">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="http://1cr9883up6mem97ddj01yxgu.wpengine.netdna-cdn.com/wp-content/uploads/images/web-dog1.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="14">
-                                                <div class="price col-xs-6">
-                                                    <h5>Pink Tutu Dress</h5>
-                                                    <h5 class="price-text-color">$35.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://1cr9883up6mem97ddj01yxgu.wpengine.netdna-cdn.com/wp-content/uploads/images/web-dog1.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="14">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Pink Tutu Dress</h5>
+                                                        <h5 class="price-text-color">$35.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b14" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b14">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://puppydogweb.com/gallery/doxipoos/doxipoo_consey2.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="15">
-                                                <div class="price col-xs-6">
-                                                    <h5>Christmas Dress</h5>
-                                                    <h5 class="price-text-color">$49.99</h5>
-                                                </div>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://puppydogweb.com/gallery/doxipoos/doxipoo_consey2.jpg" class="img-responsive" alt="a" />
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b15">Add to cart</a>
-                                                </p>
-                                           </div>
-                                            <div class="clearfix"></div>
+                                            <div class="info">
+                                                <div class="row" id="15">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Christmas Dress</h5>
+                                                        <h5 class="price-text-color">$49.99</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b15" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="http://www.barmasdoggery.com/amber.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="16">
-                                                <div class="price col-xs-6">
-                                                    <h5>Yellow Raincoat</h5>
-                                                    <h5 class="price-text-color">$35.99</h5>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://www.barmasdoggery.com/amber.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="16">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Yellow Raincoat</h5>
+                                                        <h5 class="price-text-color">$35.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b16" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b16">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="http://rizale.co/wp-content/uploads/2017/06/wedding-guest-gifts-ideas-top-7-for-dogs-wrapping-350x260.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="17">
-                                                <div class="price col-xs-6">
-                                                    <h5>Lavender Polka Dot Dress</h5>
-                                                    <h5 class="price-text-color">$43.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://rizale.co/wp-content/uploads/2017/06/wedding-guest-gifts-ideas-top-7-for-dogs-wrapping-350x260.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="17">
+                                                    <div class="price col-xs-6">
+                                                        <h5>Lavender Polka Dot </h5>
+                                                        <h5 class="price-text-color">$43.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b17" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b17">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://www.vogue4dog.ru/image/cache/data/odezhda-dlya-yorkov-350x260.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="18">
-                                                <div class="price col-xs-6">
-                                                    <h5>Winter Outfit</h5>
-                                                    <h5 class="price-text-color">$39.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://www.vogue4dog.ru/image/cache/data/odezhda-dlya-yorkov-350x260.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="18">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Winter Outfit</h5>
+                                                        <h5 class="price-text-color">$39.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b18" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b18">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -559,164 +554,162 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="container" id="accessories">
-            <div class="row">
+            <br>
+            <div class="container" id="accessories">
                 <div class="row">
-                    <div class="col-xs-9">
-                        <h3>Accessories</h3>
-                    </div>
-                    <div class="col-xs-3">
-                <!-- Controls -->
-                        <div class="controls pull-right hidden-xs-down">
-                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-accessories" data-slide="prev">
-                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            </a>
-                            <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-accessories" data-slide="next">
-                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                            </a>
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <h3>Accessories</h3>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="controls pull-right hidden-xs-down">
+                                <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-accessories" data-slide="prev">
+                                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                </a>
+                                <a class="right fa fa-chevron-right btn btn-primary" href="#carousel-accessories" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="carousel-accessories" class="carousel slide hidden-xs-down" data-ride="carousel">
-            <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://sc01.alicdn.com/kf/HTB15aWNRpXXXXa5apXXq6xXFXXXh/Lovoyager-pet-accessories-small-puppy-dog-harness.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="19">
-                                                <div class="price col-xs-6">
-                                                    <h5>Lovoyager Pet Accessories</h5>
-                                                    <h5 class="price-text-color">$4.99</h5>
+                    <div id="carousel-accessories" class="carousel slide hidden-xs-down" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://sc01.alicdn.com/kf/HTB15aWNRpXXXXa5apXXq6xXFXXXh/Lovoyager-pet-accessories-small-puppy-dog-harness.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="19">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Lovoyager Pet Accessories</h5>
+                                                        <h5 class="price-text-color aPrice">$4.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b19" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b19">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB1SzDULpXXXXbBXpXXq6xXFXXX0/Fashion-Luxury-font-b-Female-b-font-Pet-font-b-Dog-b-font-Collar-Bling-Rhinestone.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="20">
-                                                <div class="price col-xs-6">
-                                                    <h5>Rhinestone Pearl Collar</h5>
-                                                    <h5 class="price-text-color">$9.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB1SzDULpXXXXbBXpXXq6xXFXXX0/Fashion-Luxury-font-b-Female-b-font-Pet-font-b-Dog-b-font-Collar-Bling-Rhinestone.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="20">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Rhinestone Pearl Dog Collar</h5>
+                                                        <h5 class="price-text-color">$9.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down bPrice" id="b20" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b20">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="http://g02.a.alicdn.com/kf/HTB15BByJVXXXXc9XFXXq6xXFXXXM/PU-Leather-Dog-Collar-Rhinestone-Collar-Perro-font-b-Pet-b-font-font-b-Accessories-b.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="21">
-                                                <div class="price col-xs-6">
-                                                    <h5>PU Leather Dog Collar</h5>
-                                                    <h5 class="price-text-color">$8.99</h5>
-                                                </div>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://g02.a.alicdn.com/kf/HTB15BByJVXXXXc9XFXXq6xXFXXXM/PU-Leather-Dog-Collar-Rhinestone-Collar-Perro-font-b-Pet-b-font-font-b-Accessories-b.jpg" class="img-responsive" alt="a" />
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b21">Add to cart</a>
-                                                </p>
-                                           </div>
-                                            <div class="clearfix"></div>
+                                            <div class="info">
+                                                <div class="row" id="21">
+                                                    <div class="price col-xs-12">
+                                                        <h5>PU Leather Rhinestone Dog Collar</h5>
+                                                        <h5 class="price-text-color">$8.99</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b21" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB1BqyGKpXXXXcwXVXXq6xXFXXXA/Armi-font-b-store-b-font-Pink-Fashion-Style-Retractable-Automatic-Pet-font-b-Dogs-b.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="22">
-                                                <div class="price col-xs-6">
-                                                    <h5>Automatic Dog Collar Leashes </h5>
-                                                    <h5 class="price-text-color">$19.99</h5>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB1BqyGKpXXXXcwXVXXq6xXFXXXA/Armi-font-b-store-b-font-Pink-Fashion-Style-Retractable-Automatic-Pet-font-b-Dogs-b.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="22">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Automatic Dog Collar Leashes </h5>
+                                                        <h5 class="price-text-color">$19.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b22" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b22">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://s-media-cache-ak0.pinimg.com/originals/42/b4/8f/42b48f8ba9f017fc683af1d1e426ed58.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="23">
-                                                <div class="price col-xs-6">
-                                                    <h5>Stripes Large Dog Neckties</h5>
-                                                    <h5 class="price-text-color">$10.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://s-media-cache-ak0.pinimg.com/originals/42/b4/8f/42b48f8ba9f017fc683af1d1e426ed58.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="23">
+                                                    <div class="price col-xs-12">
+                                                        <h5>Stripes Large Dog Neckties</h5>
+                                                        <h5 class="price-text-color">$10.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b23" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b23">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="col-item">
-                                        <div class="photo">
-                                            <img src="https://ae01.alicdn.com/kf/HTB1Bd7PNpXXXXXwXpXXq6xXFXXXC/Rhinestone-ID-Card-of-font-b-Pet-b-font-font-b-Dog-b-font-Necklace-Pendant.jpg" class="img-responsive" alt="a" />
-                                        </div>
-                                        <div class="info">
-                                            <div class="row" id="24">
-                                                <div class="price col-xs-6">
-                                                    <h5> Dog Necklace Pendant</h5>
-                                                    <h5 class="price-text-color">$15.99</h5>
+                                    <div class="col-xs-4">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="https://ae01.alicdn.com/kf/HTB1Bd7PNpXXXXXwXpXXq6xXFXXXC/Rhinestone-ID-Card-of-font-b-Pet-b-font-font-b-Dog-b-font-Necklace-Pendant.jpg" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row" id="24">
+                                                    <div class="price col-xs-12">
+                                                        <h5> Dog Necklace ID Tag Pendant</h5>
+                                                        <h5 class="price-text-color">$15.99</h5>
+                                                    </div>
                                                 </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        <a class="hidden-xs-down" id="b24" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
-                                            <div class="separator clear-left">
-                                                <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                    <a class="hidden-xs-down" id="b24">Add to cart</a>
-                                                </p>
-                                            </div>
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -727,16 +720,14 @@
             </div>
         </div>
         <div class="modal fade" id="myModal3">
-	        <div class="modal-dialog">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-                        <h4 class="modal-title">Added to Cart</h4>
+                        <h4 class="modal-title">Item Added to Cart</h4>
                     </div>
-                    <div class="modal-body">
-                        <div class="modal-footer">
-                            <a href="#" data-dismiss="modal" class="btn">Close</a>
-                        </div>
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
                     </div>
                 </div>
             </div>
@@ -752,17 +743,17 @@
                 <div id="summary" style="background-color: rgba(248,249,249, 0.8); width: 20%">
                     <h3 style="font-size: 20px; text-align: center;">Order Summary</h3>
                     <br>
-                    <strong style="font-size: 20px">Subtotal:<strong style="font-size: 18px; float: right">$0.00</strong></strong>
+                    <strong style="font-size: 20px">Subtotal:<strong class="subtotal" id="subtotal" style="font-size: 18px; float: right">$0.00</strong></strong>
                     <br><br><br>
-                    <strong>Items:<strong style="float: right">$0.00</strong></strong>
+                    <strong>Items:<strong class="itemsprice" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Shipping & handling:<strong style="float: right">$0.00</strong></strong>
+                    <strong>Shipping & handling:<strong class="shippinghandling" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Total before tax:<strong style="float: right">$0.00</strong></strong>
+                    <strong>Total before tax:<strong class="totalNotax" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Tax:<strong style="float: right">$0.00</strong></strong>
+                    <strong>Tax:<strong class="tax" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Order total:<strong style="float: right">$0.00</strong></strong>
+                    <strong>Order total:<strong class="total" style="float: right">$0.00</strong></strong>
                     <br><br>
                 </div>
             </div>
