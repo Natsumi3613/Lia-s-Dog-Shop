@@ -613,7 +613,7 @@
                                                 <div class="separator clear-left">
                                                     <p class="btn-add">
                                                         <i class="fa fa-shopping-cart"></i>
-                                                        <a class="hidden-xs-down bPrice" id="b20" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
+                                                        <a class="hidden-xs-down" id="b20" data-target="#myModal3" data-toggle="modal" type="button">Add to cart</a>
                                                     </p>
                                                 </div>
                                                 <div class="clearfix"></div>
@@ -743,17 +743,15 @@
                 <div id="summary" style="background-color: rgba(248,249,249, 0.8); width: 20%">
                     <h3 style="font-size: 20px; text-align: center;">Order Summary</h3>
                     <br>
-                    <strong style="font-size: 20px">Subtotal:<strong class="subtotal" id="subtotal" style="font-size: 18px; float: right">$0.00</strong></strong>
+                    <strong style="font-size: 20px">Subtotal:<strong id="subtotal" style="font-size: 18px; float: right">$0.00</strong></strong>
                     <br><br><br>
-                    <strong>Items:<strong class="itemsprice" style="float: right">$0.00</strong></strong>
+                    <strong>Items:<strong id="itemsprice" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Shipping & handling:<strong class="shippinghandling" style="float: right">$0.00</strong></strong>
+                    <strong>Total before tax:<strong id="totalNotax" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Total before tax:<strong class="totalNotax" style="float: right">$0.00</strong></strong>
+                    <strong>Tax:<strong id="tax" style="float: right">$0.00</strong></strong>
                     <br><br>
-                    <strong>Tax:<strong class="tax" style="float: right">$0.00</strong></strong>
-                    <br><br>
-                    <strong>Order total:<strong class="total" style="float: right">$0.00</strong></strong>
+                    <strong>Order total:<strong id="total" style="float: right">$0.00</strong></strong>
                     <br><br>
                 </div>
             </div>

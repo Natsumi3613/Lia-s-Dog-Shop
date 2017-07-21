@@ -99,6 +99,8 @@ $( document ).ready(function() {
         sum += tempXInt;
         document.getElementById("subtotal").innerHTML ="$"+ sum;
         document.getElementById("itemsprice").innerHTML ="$"+ sum;
+        document.getElementById("totalNotax").innerHTML ="$"+ sum;
+        document.getElementById("total").innerHTML ="$"+ sum;
     });
     function sumOfTotal(item) {
         sum += item;
