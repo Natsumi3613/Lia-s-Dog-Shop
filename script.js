@@ -1,7 +1,7 @@
 // JavaScript File
 $( document ).ready(function() {
     $("#pic1").click(function(){
-        $("#gallery-main").attr("src","http://images8.wookmark.com/129580_animals-dogs-puppies-1280x1024-wallpaper_www.wallpapermi.com_5.jpg");
+        $("#gallery-main").attr("src","https://66.media.tumblr.com/8d1912c66dbff23934a7aec7bb6515a0/tumblr_nlkkf0Im1s1sgtltto1_500.jpg");
     });
     $("#pic2").click(function(){
         $("#gallery-main").attr("src","https://sites.google.com/site/westsidebeagles/_/rsrc/1367458451260/dogsandpuppiesforsale/DeeDee%27s_Beagle_Puppies_at_4_weeks_002.JPG?height=320&width=400");

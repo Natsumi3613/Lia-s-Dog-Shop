@@ -65,7 +65,23 @@ a{
 .dropdown-content a:hover{
     background-color: #EBDEF0
 }
-
+#signup{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#firstname{
+    width:400px;
+}
+#lastname{
+    width:400px;
+}
+#exampleInputEmail2{
+    width:400px;
+}
+#exampleInputPassword2{
+    width:400px;
+}
 
 
 
@@ -160,6 +176,13 @@ img{
 }
 #gallery-main{
   width: 100%;
+}
+#pic1{
+    display: block;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 33%;
 }
 .gallery-thumb{
     display: block;
