@@ -1,3 +1,4 @@
+//c9.io moving
 // JavaScript File
 $( document ).ready(function() {
     $("#pic1").click(function(){
